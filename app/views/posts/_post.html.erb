@@ -1,0 +1,5 @@
+<h2><%= post.title %></h2>
+<div><span class="author">by <%= post.author.name %></span> <span class="published_on">on <%= post.published_on.strftime("%b %d, %Y") %></span></div>
+<p class="post_body">
+  <%= post.body %>
+</p>
