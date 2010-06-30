@@ -1,6 +1,9 @@
 Rpress::Application.routes.draw do |map|
   get "posts/index"
 
+  get "post/:id" => "posts#show"
+  get "posts/create" => "posts#create"
+  post "posts/create" => "posts#create"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
